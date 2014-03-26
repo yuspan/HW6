@@ -39,6 +39,11 @@
             </UpdateParameters>
         </asp:SqlDataSource>
         <br />
+        <a href="Default.aspx">Home</a>
+        <br />
+      
+
+        <a href="NewRecipe.aspx">Add a new recipe</a>
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="recipeID" DataSourceID="SqlDataSource1" Width="782px">
             <Columns>
                 <asp:BoundField DataField="recipename" HeaderText="Recipe Name" SortExpression="recipename" />

@@ -42,6 +42,12 @@
             </UpdateParameters>
         </asp:SqlDataSource>
         <br />
+            <a href="Default.aspx" >Home</a>
+        <br />
+        <a href="Recipe.aspx" >View all recipes</a>
+        <br />
+        <a href="NewRecipe.aspx">Add a new recipe</a>
+        <br />
         <asp:DetailsView ID="DetailsView1" runat="server" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="recipeID" DataSourceID="SqlDataSource1" Height="50px" style="margin-bottom: 0px" Width="608px">
             <Fields>
                 <asp:BoundField DataField="recipename" HeaderText="Recipe Name" SortExpression="recipename" />

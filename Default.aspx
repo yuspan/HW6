@@ -14,9 +14,9 @@
 
         <br />
         <br />
-        <a href="Recipe.aspx">View all Pages</a>
+        <a href="./Recipe.aspx">View all recipes</a>
         <br />
-        <a href="NewRecipe.aspx" >Add a new recipe</a>
+        <a href="./NewRecipe.aspx">Add a new recipe</a>
     </div>
 
     </form>
