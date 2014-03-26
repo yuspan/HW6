@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Gridview.aspx.vb" Inherits="Gridview" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Recipe.aspx.vb" Inherits="Gridview" %>
 
 <!DOCTYPE html>
 
@@ -46,6 +46,7 @@
                 <asp:BoundField DataField="Submitted By" HeaderText="Submitted By" SortExpression="Submitted By" />
                 <asp:BoundField DataField="Ingredient #1" HeaderText="Ingredient #1" SortExpression="Ingredient #1" />
                 <asp:BoundField DataField="Preparation" HeaderText="Preparation" SortExpression="Preparation" />
+                <asp:HyperLinkField DataNavigateUrlFields="Recipe ID" DataNavigateUrlFormatString="Recipe details.aspx?Recipe ID={0}" Text="View Details " />
             </Columns>
             <EditRowStyle BackColor="#999999" />
             <FooterStyle BackColor="#5D7B9D" ForeColor="White" Font-Bold="True" />
