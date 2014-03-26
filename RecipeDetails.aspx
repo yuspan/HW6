@@ -48,7 +48,7 @@
         <br />
         <a href="NewRecipe.aspx">Add a new recipe</a>
         <br />
-        <asp:DetailsView ID="DetailsView1" runat="server" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="recipeID" DataSourceID="SqlDataSource1" Height="50px" style="margin-bottom: 0px" Width="608px">
+        <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="recipeID" DataSourceID="SqlDataSource1" Height="50px" style="margin-bottom: 0px" Width="608px">
             <Fields>
                 <asp:BoundField DataField="recipename" HeaderText="Recipe Name" SortExpression="recipename" />
                 <asp:BoundField DataField="submitted by" HeaderText="Submitted By" SortExpression="submitted by" />
