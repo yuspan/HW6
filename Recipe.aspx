@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="detailsview.aspx.vb" Inherits="detailsview" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Recipe.aspx.vb" Inherits="gridview" %>
 
 <!DOCTYPE html>
 
@@ -39,20 +39,13 @@
             </UpdateParameters>
         </asp:SqlDataSource>
         <br />
-        <asp:DetailsView ID="DetailsView1" runat="server" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="recipeID" DataSourceID="SqlDataSource1" Height="50px" style="margin-bottom: 0px" Width="608px">
-            <Fields>
+        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="recipeID" DataSourceID="SqlDataSource1" Width="782px">
+            <Columns>
                 <asp:BoundField DataField="recipename" HeaderText="Recipe Name" SortExpression="recipename" />
                 <asp:BoundField DataField="submitted by" HeaderText="Submitted By" SortExpression="submitted by" />
-                <asp:BoundField DataField="ingredient #1" HeaderText="Ingredient #1" SortExpression="ingredient #1" />
-                <asp:BoundField DataField="ingredient #2" HeaderText="Ingredient #2" SortExpression="ingredient #2" />
-                <asp:BoundField DataField="ingredient #3" HeaderText="Ingredient #3" SortExpression="ingredient #3" />
-                <asp:BoundField DataField="ingredient #4" HeaderText="Ingredient #4" SortExpression="ingredient #4" />
-                <asp:BoundField DataField="ingredient #5" HeaderText="Ingredient #5" SortExpression="ingredient #5" />
-                <asp:BoundField DataField="Preparation" HeaderText="Preparation" SortExpression="Preparation" />
-                <asp:BoundField DataField="Note" HeaderText="Note" SortExpression="Note" />
-                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="True" />
-            </Fields>
-        </asp:DetailsView>
+                <asp:HyperLinkField DataNavigateUrlFields="recipeID" DataNavigateUrlFormatString="recipedetails.aspx?recipeID={0}" Text="View Details" />
+            </Columns>
+        </asp:GridView>
     
     </div>
     </form>
