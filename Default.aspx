@@ -31,5 +31,7 @@
               </div>
     </form>
     <div id="image"><img src="./pic1.jpg" /></div>
+    © 2014. 6K:183 Software Design & Development
 </body>
+    
 </html>

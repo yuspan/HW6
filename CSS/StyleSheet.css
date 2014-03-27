@@ -6,7 +6,7 @@
 }
 
 body {
- 
+ text-align:center;
     font-family: Calibri;
     font-size: large;
     color: black;
@@ -17,7 +17,7 @@ body {
     background-color:white;
 }
 
-#links li{font-size:40px;
+#links li{font-size:30px;
         color:tomato;
      display:inline;
     font-weight:bold;
