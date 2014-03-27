@@ -8,6 +8,7 @@
      <link rel="stylesheet" type="text/css" href="./css/stylesheet.css" />
 </head>
 <body>
+     <h1>Yusha&#39;s Recipes</h1>
     <div id="links">
               <ul>
               <li><a href="./Default.aspx">Home</a> </li>&nbsp
