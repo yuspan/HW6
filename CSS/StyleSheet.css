@@ -13,7 +13,7 @@ body {
     margin: 50px;
     padding:100px;
     border:10px double black;
-    opacity:.7;
+    opacity:.9;
     background-color:white;
 }
 
@@ -22,8 +22,13 @@ body {
      display:inline;
     font-weight:bold;
     border:dashed;
+    text-align:center;
 }
 
+div.image {margin-left:auto;
+        margin-right:auto;
+        text-align:center;
+}
 
 
 a:link {text-decoration:none;
@@ -37,7 +42,7 @@ a:link {text-decoration:none;
 
 H1 {
     text-align: center;
-    color:#333333;
+    color:Black;
     font-family: 'Century Gothic', Charcoal, sans-serif;
     font-size:50px;
 }
@@ -55,6 +60,7 @@ float:none;
 text-align:center;
 margin-left:auto;
 margin-right:auto;
+font-size:medium;
 }
 
 #center {margin-left:auto;
@@ -67,6 +73,8 @@ margin-right:auto;
     border: solid 2px black;
     border-collapse: collapse;
     text-align: center;
+    margin-left:auto;
+    margin-right:auto;
 }
 
     .cssgridview td {

@@ -8,12 +8,13 @@
      <link rel="stylesheet" type="text/css" href="./css/stylesheet.css" />
 </head>
 <body>
+     <h1>Yusha&#39;s Recipes</h1>
     <form id="form1" runat="server">
        <div id="links">
               <ul>
-              <li><a href="./Default.aspx">Home</a> </li>
-                  <li><a href="./Recipe.aspx">View all recipes</a></li>
-            <li>&nbsp;<a href="./aboutus.aspx">About Us</a></li>
+              <li><a href="./Default.aspx">Home</a> </li>&nbsp
+                  <li><a href="./Recipe.aspx">View Recipes</a></li>&nbsp
+            <li>&nbsp;<a href="./aboutus.aspx">About Us</a></li>&nbsp
               <li>&nbsp;<a href="./contact.aspx">Contact</a></li>
                 </ul>
 
@@ -54,7 +55,7 @@
         <br />
        
  
-
+  
          <asp:DetailsView ID="DetailsView1" runat="server" cssclass="cssgridview" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="recipeID" DataSourceID="SqlDataSource1" Height="50px" style="margin-bottom: 0px" Width="608px" DefaultMode="Insert" >
               <AlternatingRowStyle CssClass="alt" />
              <Fields>
@@ -70,7 +71,7 @@
                 <asp:CommandField ShowInsertButton="True" />
             </Fields>
         </asp:DetailsView>
-
+   
     </div>
     </form>
 </body>

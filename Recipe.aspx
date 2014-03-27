@@ -8,12 +8,13 @@
  <link rel="stylesheet" type="text/css" href="./css/stylesheet.css" />
 </head>
 <body>
+     <h1>Yusha&#39;s Recipes</h1>
     <form id="form1" runat="server">
         <div id="links">
               <ul>
-              <li><a href="./Default.aspx">Home</a></li>
-                  <li>&nbsp;<a href="./NewRecipe.aspx">Add a new recipe</a></li>
-            <li>&nbsp;<a href="./aboutus.aspx">About Us</a></li>
+              <li><a href="./Default.aspx">Home</a></li>&nbsp
+                  <li>&nbsp;<a href="./NewRecipe.aspx">New Recipe</a></li>&nbsp
+            <li>&nbsp;<a href="./aboutus.aspx">About Us</a></li>&nbsp
               <li>&nbsp;<a href="./contact.aspx">Contact</a></li>
                 </ul>
 
