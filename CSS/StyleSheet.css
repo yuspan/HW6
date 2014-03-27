@@ -1,0 +1,87 @@
+﻿.deletedrecipehighlight {
+    color: green;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+body {
+ 
+    font-family: Calibri;
+    font-size: large;
+    color: black;
+    margin: 50px;
+    padding:100px;
+    border:10px double black;
+    opacity:.7;
+    background-color:white;
+}
+
+#links li{font-size:40px;
+        color:tomato;
+     display:inline;
+    font-weight:bold;
+    border:dashed;
+}
+
+
+
+a:link {text-decoration:none;
+        color:black;
+}
+ a:visited {text-decoration:none;
+            color:black;
+ }
+ a:hover {text-decoration:underline;}
+ a:active {text-decoration:underline;}
+
+H1 {
+    text-align: center;
+    color:#333333;
+    font-family: 'Century Gothic', Charcoal, sans-serif;
+    font-size:50px;
+}
+html {
+      background-image:url("background.jpg");
+ background-repeat:no-repeat;
+ background-position:center; 
+ background-attachment:fixed;
+}
+
+
+div {
+   background-color:white;
+float:none;
+text-align:center;
+margin-left:auto;
+margin-right:auto;
+}
+
+#center {margin-left:auto;
+         margin:right:auto;
+}
+
+.cssgridview {
+    width: auto;
+    margin: 5px 0 10px;
+    border: solid 2px black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+    .cssgridview td {
+        padding: 10px; 
+        border:solid 1px;
+        color:black;
+    }
+
+    .cssgridview th {
+        padding: 10px;
+        color: black;
+        font-family:Cambria;
+       background-color:floralwhite;
+    }
+
+    .cssgridview .alt {
+    background-color: tomato;
+}

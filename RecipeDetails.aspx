@@ -5,9 +5,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link rel="stylesheet" type="text/css" href="./css/stylesheet.css" />
 </head>
 <body>
     <form id="form1" runat="server">
+         <div id="links">
+              <ul>
+              <li><a href="./Default.aspx">Home</a></li>
+            <li>&nbsp;<a href="./aboutus.aspx">About Us</a></li>
+              <li>&nbsp;<a href="./contact.aspx">Contact</a></li>
+                </ul>
+
+              </div>
     <div>
     
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:cs_recipe %>" DeleteCommand="DELETE FROM [RECIPE] WHERE [recipeID] = @recipeID" InsertCommand="INSERT INTO [RECIPE] ([recipename], [submitted by], [ingredient #1], [ingredient #2], [ingredient #3], [ingredient #4], [ingredient #5], [Preparation], [Note]) VALUES (@recipename, @submitted_by, @column1, @column2, @column3, @column4, @column5, @Preparation, @Note)" SelectCommand="SELECT * FROM [RECIPE] WHERE ([recipeID] = @recipeID)" UpdateCommand="UPDATE [RECIPE] SET [recipename] = @recipename, [submitted by] = @submitted_by, [ingredient #1] = @column1, [ingredient #2] = @column2, [ingredient #3] = @column3, [ingredient #4] = @column4, [ingredient #5] = @column5, [Preparation] = @Preparation, [Note] = @Note WHERE [recipeID] = @recipeID">
@@ -42,14 +51,11 @@
             </UpdateParameters>
         </asp:SqlDataSource>
         <br />
-            <a href="Default.aspx" >Home</a>
-        <br />
-        <a href="Recipe.aspx" >View all recipes</a>
-        <br />
-        <a href="NewRecipe.aspx">Add a new recipe</a>
-        <br />
-        <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="recipeID" DataSourceID="SqlDataSource1" Height="50px" style="margin-bottom: 0px" Width="608px">
-            <Fields>
+       
+        
+        <asp:DetailsView ID="DetailsView1" runat="server" cssclass="cssgridview" AutoGenerateRows="False" DataKeyNames="recipeID" DataSourceID="SqlDataSource1" Height="50px" style="margin-bottom: 0px" Width="608px" >
+              <AlternatingRowStyle CssClass="alt" />
+             <Fields>
                 <asp:BoundField DataField="recipename" HeaderText="Recipe Name" SortExpression="recipename" />
                 <asp:BoundField DataField="submitted by" HeaderText="Submitted By" SortExpression="submitted by" />
                 <asp:BoundField DataField="ingredient #1" HeaderText="Ingredient #1" SortExpression="ingredient #1" />
@@ -59,10 +65,11 @@
                 <asp:BoundField DataField="ingredient #5" HeaderText="Ingredient #5" SortExpression="ingredient #5" />
                 <asp:BoundField DataField="Preparation" HeaderText="Preparation" SortExpression="Preparation" />
                 <asp:BoundField DataField="Note" HeaderText="Note" SortExpression="Note" />
-                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="True" />
+             
+                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="True" />
             </Fields>
         </asp:DetailsView>
-    
+  
     </div>
     </form>
 </body>
